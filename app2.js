@@ -30,7 +30,6 @@ const people = (() => {
 
   const people = [];
 
-  //cache DOM
   const el = document.querySelector('.peopleModule');
   const button = el.querySelector('button');
   const input = el.querySelector('input');
@@ -57,7 +56,6 @@ const people = (() => {
     render();
   };
 
-  //bind events
   button.addEventListener('click', addPerson);
   ul.addEventListener('click', deletePerson);
 
